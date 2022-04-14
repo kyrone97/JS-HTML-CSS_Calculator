@@ -1,0 +1,20 @@
+const numberButton1 = document.getElementById("number1")
+const numberButton2 = document.getElementById("number2")
+const numberButton3 = document.getElementById("number3")
+const numberButton4 = document.getElementById("number4")
+const numberButton5 = document.getElementById("number5")
+const numberButton6 = document.getElementById("number6")
+const numberButton7 = document.getElementById("number7")
+const numberButton8 = document.getElementById("number8")
+const numberButton9 = document.getElementById("number9")
+const numberButton0 = document.getElementById("number0")
+const numberButtonFullStop = document.getElementById("number.")
+const operationButtons = document.getElementById("operations")
+const deleteButton = document.getElementById("delete")
+const clearButton = document.getElementById("clear")
+const equalButton = document.getElementById("equals")
+const currentOutput = document.getElementById("showing-number")
+const mainOutput = document.getElementById("output")
+
+
+

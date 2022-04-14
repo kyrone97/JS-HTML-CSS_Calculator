@@ -1,0 +1,47 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  /* Defines how the width and height of an element are calculated: should they include padding and borders, or not */
+  /* setting border box on an element means, padding and border are included in the width and height */
+  box-sizing: border-box;
+  background-color: purple;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.calculator-case {
+  display: grid;
+  /* alligns everything to centre of screen */
+  justify-content: center;
+  align-content: center;
+  /* fill 100% of the height  */
+  min-height: 100vh;
+
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 100px);
+}
+/* selectes all the tags that are button inside this div with the class calculator-case */
+.calculator-case > button {
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: aqua;
+  border: 1px solid black;
+}
+.two-spaces {
+  grid-column: span 2;
+}
+
+.output {
+  /* span from the first column to the last coloumn so all the way across */
+  /* the .75 at end is for transparency works as 75% transparent */
+  grid-column: 1 / -1;
+  background-color: rgb(18, 218, 208, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.output .current-number {
+  color: white;
+  font-size: x-large;
+}
